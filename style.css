@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+@font-face {
+    font-family : "Amatic SC", cursive,
+    url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+}
+@font-face {
+    font-family: 'Open Sans Condensed', sans-serif,
+    url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+}
+@font-face {
+    font-family : "PT Serif",
+    url('https://fonts.googleapis.com/css?family=PT+Serif');
+}
+
+
+
+
+/* --- GERERAL --- */
+
+html {
+  scroll-behavior : smooth;
+}
+
+body {
+    margin:0px;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom : 0px;
+}
+
+section {
+    padding-top: 2%;
+}
+
+section h2 {
+    padding-top: 20px;
+    font-family: "Amatic SC", cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    color : white;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}
+
+section h2::first-letter {
+    font-size: 50px;
+}
+
+#performances h2::first-letter,
+header li:nth-child(1)::first-letter{
+    color : dodgerblue;
+}
+
+#aboutus h2::first-letter,
+header li:nth-child(2)::first-letter{
+    color : red;
+}
+
+#prices h2::first-letter,
+header li:nth-child(3)::first-letter{
+    color : lawngreen;
+}
+
+#contact h2::first-letter,
+header li:nth-child(4)::first-letter{
+    color : orange;
+}
+
+
+
+/* --- HEADER / NAV --- */
+
+header {
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    background-color: #222222;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header h1 {
+    float: left;
+    margin-top: 3px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-style: italic;
+    font-variant: small-caps;
+    color: white;
+    font-family: "Amatic SC";
+    font-weight: bold;
+}
+
+header li {
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Amatic SC";
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header li:nth-child(1) a:hover {
+  color: dodgerblue;
+}
+
+header li:nth-child(2) a:hover {
+  color: red;
+}
+
+header li:nth-child(3) a:hover {
+  color: lawngreen;
+}
+
+header li:nth-child(4) a:hover {
+  color: orange;
+}
+
+/* --- CORE PAGE --- */
+/* GERERAL */
+
+#performances,
+#aboutus,
+#prices{
+    height: 950px;
+}
+
+/* PERFORMANCES */
+
+@keyframes background_opacity {
+    from { background-color: rgba(0,0,0,40%); }
+    to {  background-color: rgba(0,0,0,10%); }
+}
+
+#performances {
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?cs=srgb&dl=light-art-blue-370799.jpg&fm=jpg'), radial-gradient(rgba(0,100,200,50%), rgba(0,0,0,40%));
+    background-color: rgba(0,0,0,20%);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+#performances h3 {
+    font-family: "Open Sans Condensed";
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#performances li hr {
+    width: 80%;
+    margin-top: 0px;
+}
+
+#performances ul {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#performances li {
+    display: inline-block;
+    width: 33%;
+    height: 700px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    margin: 0px;  
+}
+
+#performances li:nth-child(1),
+#performances li:nth-child(2),
+#performances li:nth-child(3) {
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,40%);
+}
+
+#performances li:nth-child(1):hover,
+#performances li:nth-child(2):hover,
+#performances li:nth-child(3):hover {
+    animation-name: background_opacity;
+    background-color: rgba(0,0,0,10%);
+    animation-duration: 0.5s;
+}
+
+#performances li:nth-child(1) { 
+    background-image: url("https://lauragraceweldon.files.wordpress.com/2016/06/a1.jpg?w=676"),radial-gradient(rgba(150,50,0,70%), rgba(0,0,0,100%));
+    background-size: 750px 800px;  
+    background-position: center;
+    box-shadow: 0px 0px 1px 1px rgba(255,0,0,5%);
+}
+
+#performances li:nth-child(2) {
+    background-image: url("http://kb4images.com//images/dream-images/36854716-dream-images.jpg"),radial-gradient(rgba(0,100,255,50%), rgba(0,0,0,100%));
+    background-blend-mode: overlay;
+    background-size: 1200px 800px; 
+    background-position: -20px 0px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 1px 1px rgba(0,100,255,5%);
+}
+
+#performances li:nth-child(3) {
+    background-image: url("http://hdwallpapersrocks.com/wp-content/uploads/2013/09/Lotus-flower-marvelous-background-wallpapers.jpg"),radial-gradient(rgba(0,100,20,30%), rgba(0,0,0,100%));
+    background-blend-mode: overlay;
+    background-size: 1024px 800px;
+    background-position: -200px 0px;
+    box-shadow: 0px 0px 1px 1px rgba(0,255,0,5%);
+}
+
+#performances li:nth-child(1) p,
+#performances li:nth-child(2) p,
+#performances li:nth-child(3) p {
+    position: absolute;
+    margin-top : 420px;
+    max-width: 29%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 1.1em;
+    font-family: "PT Serif";
+    background-color: rgba(0,0,0,50%);
+}
+
+#performances p hr {
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+/* ABOUT US */
+
+#aboutus {
+    background-image: url('https://wallpaperbrowse.com/media/images/704532.jpg'), radial-gradient(rgba(255,255,25,80%), rgba(0,0,0,60%));
+    background-color: rgba(200,0,0,80%);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#aboutus article {
+    display: block;
+    position: relative;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    height: 25%;
+    object-position: center;
+    width : 70%;
+    background-color: rgba(150,150,150,10%);
+    border: 0px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 4px rgba(0,0,0,30%);
+}
+
+#aboutus h3 {
+    margin-left: 100px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.7em;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+#aboutus hr {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#aboutus img {
+    display: inline;
+    position: relative;
+    width: 25%;
+    max-width: 160px;
+    margin-top: 10px;
+}
+
+#aboutus article:nth-child(even) img {
+    float: left;
+    margin-left: 5%;
+}
+
+#aboutus article:nth-child(odd) img {
+    float: right;
+  margin-right: 5%;
+}
+
+#aboutus article:nth-child(even) p {
+    margin-right: 20px;
+}
+
+#aboutus article:nth-child(odd) p {
+    margin-left: 20px;
+}
+
+#aboutus p {
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    color: white;
+    font-family: "PT Serif";
+    font-size: 17px;
+}
+
+/* PRICES */
+
+#prices {
+    background-color: rgba(10,100,0,80%);
+    background-image: url('https://www.walldevil.com/wallpapers/w09/green-radial.jpg');
+    background-position: center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#prices p {
+    position: relative;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 10px;
+    background-color: rgba(255,255,255,20%);
+    color: white;
+    box-shadow: 0px 0px 1px 4px rgba(0,0,0,30%);
+}
+
+#prices a {
+    color: aquamarine;
+}
+
+#prices p,
+#prices a {
+    font-family: "Open Sans Condensed";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#prices table {
+    position: relative;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    width: 70%;
+    height: 500px;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 0px;
+    box-shadow: 0px 0px 1px 4px rgba(0,0,0,30%);
+    font-size: 25px;
+    font-family: "Open Sans Condensed";
+    font-weight: bold;
+}
+
+#prices thead tr,
+#prices tbody tr{
+    height : 100px;
+}
+
+#prices table th{
+    background-color: rgba(50,200,0,50%);
+}
+
+#prices th, 
+#prices td{
+    border: 1px solid rgba(0,0,0,30%);
+}
+ 
+#prices tr:nth-child(odd){
+    background-color: rgba(255,255,255,70%);
+}
+
+#prices tr:nth-child(even){
+    background-color: rgba(200,200,200,70%);
+}
+
+/* CONTACT */
+
+#contact {
+    height: 900px;
+    padding-top: 20px;
+    background-color: rgba(200,100,0,95%);
+    background-image: url("https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Balloons-PNG/Transparent_Balloons_Arch_Clipart_Image.png?m=1441940101");
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: center;
+    text-align: center;
+}
+
+#contact form {
+    padding: 30px;
+    width: 800px;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0,0,0,70%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 3px rgba(0,0,0,40%);
+}
+
+#mail {
+    margin-top: 20px;
+}
+
+#mail input {
+    width: 100%;
+    border : 0px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,30%);
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#message {
+    margin-top: 50px;
+}
+
+#message textarea {
+    width: 750px;
+    height: 300px;
+    border : 0px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,30%);
+    padding: 10px;
+    vertical-align: text-top;
+    margin-top: 10px;
+    resize: none;
+}
+
+#messagesendalert {
+    position: absolute;
+    margin-left: 30%;
+}
+
+#contact .button {
+    float: right;
+    text-align: center;
+    font-size: 15px;
+    font-family: "PT Serif";
+    color: white;
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 100px;
+    height: 25px;
+    border : 0px solid black;
+    border-radius: 5px;
+    text-shadow: 1px 1px black;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,60%);
+    background-color: rgba(200,100,0,80%);
+}
+
+#contact .button:hover {
+    background-color: rgba(0,150,0,80%);
+}
+
+
+/* --- FOOTER / CREDITS --- */
+
+footer {
+    background-color: #222222;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    font-family: "PT Serif";
+    position: absolute;
+}
+
+footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: darkorange;
+}
+
